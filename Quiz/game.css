@@ -1,0 +1,221 @@
+html { font-size:100%; } 
+
+body{ 
+  background-color:#11999e;
+}
+
+@media (min-width: 350px) { .header{height:3rem;                             
+                                    font-size: 2.5rem;}
+                            b{font-size: 1.2rem;}
+                            #score{font-size: 1.5rem;}
+                            #question_text{font-size: 1.5rem;}
+                            #index{font-size: 1.5rem;}
+                            .choice-text{font-size: 1.2rem;}} 
+  
+@media (min-width:800px) { 
+                            .header{height: 4rem;
+                                    font-size: 3.5rem;}
+                            hr{position: absolute;
+                              top:60px;
+                              right: 0px;
+                              left: 0px;
+                              }
+                            b{font-size: 1.3rem;}        
+                            #score{font-size: 2rem;}
+                            #question_text{font-size: 2rem;}
+                            #index{font-size: 2rem;}
+                            .choice-text{font-size: 1.5rem;}
+} 
+
+@media (min-width:1100px) { 
+                             .header{height: 6rem;
+                                     font-size: 4.5rem;}
+                             hr{position: absolute;
+                                top:70px;
+                                right: 0px;
+                                left: 0px;
+                                }
+                             b{font-size: 1.5rem;}
+                             #score{font-size: 2.5rem;}
+                             #question_text{font-size: 2rem;}
+                             #index{font-size: 2.5rem;}
+                             .choice-text{font-size: 1.5rem;}
+} 
+
+
+.header {
+  position:absolute;
+  color: #66BFBF;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  background: #11999e;
+  color: white;
+  font-family: 'Sacramento', cursive;
+}
+
+#logo{
+  position: absolute;
+  top:0px;
+  left: 15rem;
+  height: 7rem;
+  width: 7rem;
+ 
+
+}
+
+#next-button{
+  text-align: center;}
+
+#score{
+  font: Serif;
+  font-weight: bold;
+  position: absolute;
+  top:100px;
+  right: 45px;
+}
+  
+
+
+#index{
+
+  font-weight: bold;
+  position: absolute;
+  margin-left: 25px;
+  top: 100px;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 50%;
+  
+}
+
+#new{  
+  position: relative;
+  top:120px;
+  margin: 3vw 1vw;
+  background-color: #f7fbfc;
+  padding: 10px;
+  border: 5px solid #272720;
+  border-radius: 25px;
+ 
+  
+}
+
+
+.choice-text {
+  margin:10px;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	/* background:linear-gradient(to bottom, #fafafa, #e9e9e9 100%); */
+	background-color: #f6f5f5;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.choice-text:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+
+.choice-text:active {
+	position:relative;
+	top:1px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #393e46;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+#loaderwrapper{
+visibility: hidden;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: #6997DB;
+
+}
+
+#loaderwrapper.show {
+  visibility: visible;
+}
+
+#loader {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+
+}
+@keyframes loader {
+  0% { left: -100px }
+  100% { left: 110%; }
+}
+
+#box {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  animation: animate .5s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+}
+@keyframes animate {
+  17% { border-bottom-right-radius: 3px; }
+  25% { transform: translateY(9px) rotate(22.5deg); }
+  50% {
+    transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+    border-bottom-right-radius: 40px;
+  }
+  75% { transform: translateY(9px) rotate(67.5deg); }
+  100% { transform: translateY(0) rotate(90deg); }
+} 
+#shadow { 
+  width: 50px;
+  height: 5px;
+  background: #000;
+  opacity: 0.1;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow .5s linear infinite;
+}
+@keyframes shadow {
+  50% {
+    transform: scale(1.2,1);
+  }
+}
+
+

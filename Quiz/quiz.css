@@ -1,0 +1,241 @@
+
+html { font-size:100%; } 
+
+body{background-color: #30475e;}
+
+@media (min-width: 350px) { .header{height:4rem;                             
+  font-size: 2.5rem;}
+  hr.style-one {
+    top: 2rem;
+    height: 3px;}
+  button{
+    width:100px;
+    height:40px;
+}} 
+
+@media (min-width:800px) { 
+.header{height: 5rem;
+  font-size: 3.5rem;}
+hr{position: absolute;
+top:60px;
+right: 0px;
+left: 0px;
+}
+hr.style-one {
+  top: 3.3rem;
+  height: 3.5px;}
+button{
+  width:150px;
+  height:50px;}
+
+} 
+
+@media (min-width:1100px) { 
+.header{height: 7rem;
+   font-size: 4.5rem;}
+hr{position: absolute;
+top:70px;
+right: 0px;
+left: 0px;
+}
+hr.style-one {
+  top: 4.5rem;
+  height: 4px;}
+button{
+  width:200px;
+  height:70px;}
+} 
+
+
+#new{  
+    text-align: center;
+    position: relative;
+    top:120px;
+    margin: 3vw 1vw;
+    background-color: #f7fbfc;
+    padding: 10px;
+    border: 5px solid #272720;
+    border-radius: 25px;
+   
+    
+  }
+
+  .header {
+    position:absolute;
+    color: #66BFBF;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    
+    text-align: center;
+    background: #11999e;
+    color: white;
+    font-family: 'Sacramento', cursive;
+  }
+
+  .custom-select {
+    margin: 25px 10px;
+    width: 95%;
+    background-color: #edeef7; 
+    /* background-position: center right;
+    background-repeat: no-repeat; */
+    border: 1px solid #AAA;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+button{
+
+  background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+  border-style: none;
+  color:#fff;
+  font-family: 'Akaya Telivigala', cursive;
+
+  font-size: 23px;
+  letter-spacing: 3px;
+  /* font-family: 'Lato'; */
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+  transition: all .5s;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+button span{
+  position: absolute;
+  display: block;
+}
+button span:nth-child(1){
+  height: 3px;
+  width:200px;
+  top:0px;
+  left:-200px;
+  background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span1 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes span1{
+  0%{
+      left:-200px
+  }
+  100%{
+      left:200px;
+  }
+}
+button span:nth-child(2){
+  height: 70px;
+  width: 3px;
+  top:-70px;
+  right:0px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span2 2s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes span2{
+  0%{
+      top:-70px;
+  }
+  100%{
+      top:70px;
+  }
+}
+button span:nth-child(3){
+  height:3px;
+  width:200px;
+  right:-200px;
+  bottom: 0px;
+  background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  animation: span3 2s linear infinite;
+  animation-delay: 3s;
+}
+@keyframes span3{
+  0%{
+      right:-200px;
+  }
+  100%{
+      right: 200px;
+  }
+}
+
+button span:nth-child(4){
+  height:70px;
+  width:3px;
+  bottom:-70px;
+  left:0px;
+  background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+  animation: span4 2s linear infinite;
+  animation-delay: 4s;
+}
+@keyframes span4{
+  0%{
+      bottom: -70px;
+  }
+  100%{
+      bottom:70px;
+  }
+}
+
+button:hover{
+  transition: all .5s;
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+button:hover span{
+  animation-play-state: paused;
+}
+hr.style-one {
+  position: absolute;
+  border: 0;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+  }
+
+  .bottom-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    background-color: #393e46;
+    padding: 20px 0 20px;
+  }
+  .footer-link{
+    font-size: 1rem;
+  
+  }
+  
+  a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 15px;
+    text-decoration: none;
+}
+
+.text-center{
+  color: #f3f0f5;
+  text-align: center;
+}

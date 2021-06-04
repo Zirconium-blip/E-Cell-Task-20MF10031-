@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 [E-Cell]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./tic_tac_toe.css">
+    <script src="./tic_tac_toe.js" defer></script>
+</head>
+
+<body>
+
+    <div class="board container" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+
+    <div class="winning-message container-fluid" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button class="btn btn-warning btn-lg" id="restartButton">Restart</button>
+    </div>
+
+    <div class="chosing-message1 show container-fluid" id="chosingMessage1">
+        <h1>Tic-Tac-Toe</h1>
+        <h3>Choose Mode</h3>
+
+        <div class="btn-group-vertical">
+            <button class="btn btn-success" id="oneButton">
+                <h1>One Player</h1>
+                <h1>Human as X</h1>
+            </button>
+            <button class="btn btn-primary" id="oneButtonO">
+                <h1>One Player</h1>
+                <h1>Human as O</h1>
+            </button>
+            <button class="btn btn-danger" id="twoButton">
+                <h1>Two Player</h1>
+            </button>
+        </div>
+
+        <div class="text-center">
+            <a href="../index.html" style="color: #ddcdc2;">Home</a>
+            <h3>Made by Samarth Singh</h3>
+            <h4>20MF10031</h4>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
